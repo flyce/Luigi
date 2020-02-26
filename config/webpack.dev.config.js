@@ -15,13 +15,14 @@ module.exports = merge(common, {
     open: true,
     port: 3000,
     compress: true,
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [ 
+        use: [
           'style-loader',
           'css-loader',
           'postcss-loader'

@@ -4,7 +4,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: {
     index: './src/index.js',
-    framework: ['react','react-dom', 'react-router-dom'],
+    framework: ['react','react-dom', 'react-router-dom', 'antd'],
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
